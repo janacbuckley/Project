@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/news.css">
+
+
+
+   <title>Bright Boost Media</title>
+
+   </head>
+  <body>
+    
+<!-- HEADER -->
+ <div class="header-content">
+ <div class="logo-text">
+        <img src="../img/logo1.JPG" alt="logo">
+         <h1> Bright Boost Media</h1>
+     </div>
+</div>     
+
+<hr>
+<nav>
+<div class="topnav" id="myTopnav">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleServices(event)">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="enterprise-solutions.html">Enterprise Growth Solutions</a>
+      <a href="emerging-solutions.html">Emerging Business Solutions</a>
+      <a href="packages.html">Packages & Pricing</a>
+    </div>
+  </div>
+ <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+   <a href="news.html" class="active">News</a>
+    <a href="blog.html">Blog</a>
+     <a href="photogallery.html">Photo Gallery</a>
+      <a href="review.html">Reviews</a>
+    
+<!-- Hamburger -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    </div>
+</nav>
+
+<br>
+<br>
+<header class="news-header">
+  <div class="header-content">
+    <h1>Latest News & Insights</h1>
+    <p>Stay Updated With Trends, Tips and Stories From the World of Digital Marketing.</p>
+  </div>
+</header>
+
+<!-- News Section -->
+<section class="news-section">
+  <div class="news-container">
+
+    <!-- Category Filter -->
+    <div class="news-filter">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="social">Social Media</button>
+      <button class="filter-btn" data-category="branding">Branding</button>
+      <button class="filter-btn" data-category="seo">SEO</button>
+    </div>
+
+    <!-- News Cards -->
+    <div class="news-grid">
+      <article class="news-card" data-category="social">
+        <img src="../img/news1.jpeg" alt="News 1">
+        <div class="news-content">
+          <h2>Social Media Trends 2025</h2>
+          <p>Discover the latest shifts in social media marketing that impact brands worldwide.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="branding">
+        <img src="../img/news2.jpeg" alt="News 2">
+        <div class="news-content">
+          <h2>Branding Tips for Small Businesses</h2>
+          <p>Learn how consistent branding can help small businesses grow and stand out.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="seo">
+        <img src="../img/news3.jpeg" alt="News 3">
+        <div class="news-content">
+          <h2>Top SEO Tips for 2025</h2>
+          <p>Boost your website's visibility with actionable SEO strategies and insights.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <!-- Hidden Cards for Load More -->
+      <article class="news-card hidden" data-category="social">
+        <img src="../img/news4.jpeg" alt="News 4">
+        <div class="news-content">
+          <h2>Instagram Algorithm Updates</h2>
+          <p>Stay ahead of the algorithm to maximize engagement and reach.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <article class="news-card hidden" data-category="branding">
+        <img src="../img/news5.jpeg" alt="News 5">
+        <div class="news-content">
+          <h2>Visual Identity Trends</h2>
+          <p>Modern branding techniques to make your brand unforgettable.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="load-more-container">
+      <button id="loadMoreBtn">Load More</button>
+    </div>
+
+  </div>
+</section>
+
+<footer class="news-footer">
+  <p>&copy; 2025 Bright Boost Media. All Rights Reserved.</p>
+  <p> Devolped by: Jana-Charisse Buckley</p>
+</footer>
+
+<script src="../script/script3.js" defer></script>
+
+</body>
+</html>

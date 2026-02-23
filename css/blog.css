@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Gelasio", serif;
+  font-size: 14px;
+}
+
+.header h1{
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  font-family: "Jim Nightshade", cursive;
+  gap: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.logo-text img {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  width: 80px;
+  height: 80px;
+}
+
+
+.topnav {
+  background-color:#581b1b;
+  overflow:hidden;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  align-items: center;
+  font-family: "Gelasio", serif;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #f27c05;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #fffffe;
+  padding: 20px 25px;
+  margin: 0;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(251, 169, 6, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background: #cab6d4;
+  color: rgb(129, 0, 0);
+}
+
+  .dropdown:hover .dropbtn {
+    background-color:#cab6d4;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content a:hover {
+  background-color: #cab6d4;
+}
+
+/* --- RESPONSIVE NAVIGATION --- */
+@media screen and (max-width: 1024px) {
+  .topnav {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+.topnav.responsive .dropbtn {
+    display: block;
+  }
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav.responsive .dropdown {
+    display: block;
+  }
+
+    .topnav.responsive .dropdown {
+    float: none;
+    width: 100%;
+  }
+
+  .topnav.responsive .dropdown-content {
+    display: block;
+    width: 100%;
+  }
+
+   .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+   }
+
+
+  .topnav a.icon {
+
+    display: block;
+  }
+ 
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+    width: 100%;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    width: 100%;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+/* ================= BLOG SECTION ================= */
+.blog-section {
+    padding: 30px 20px;
+    background: linear-gradient(935deg, #0f0b0b, #696969);
+   font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-container h1 {
+    font-size: 40px;
+    color: #f28c28;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-container p {
+    font-size: 22px;
+    color: #ccc;
+    opacity: 0.8;
+    margin-bottom: 60px;
+}
+
+/* ================= BLOG GRID ================= */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.blog-card {
+    background: linear-gradient(145deg, #1a1a1a, #2b2b2b);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(242,140,40,0.4);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 25px 20px;
+    text-align: left;
+}
+
+.blog-content h2 {
+    font-size: 18px;
+    color: #f28c28;
+    margin-bottom: 12px;
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.blog-meta {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.read-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #800020, #f28c28);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(128,0,32,0.3);
+}
+
+/* ================= FOOTER ================= */
+.blog-footer {
+    text-align: center;
+    padding: 30px;
+    background: #581b1b;
+    color: #fff;
+    font-size: 14px;
+    width: 96%;
+    margin: auto;
+}
+
+/* --- MOBILE RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 1024px) {
+    .gallery-header h1 { font-size: 28px; }
+    .gallery-header p { font-size: 18px; }
+    .gallery-item img { height: 180px; }
+}
+
+@media (max-width: 768px) {
+    .gallery-header h1 { font-size: 26px; }
+    .gallery-header p { font-size: 16px; }
+    .filter-btn { padding: 8px 15px; margin: 0 8px 8px 0; font-size: 14px; }
+    .gallery-item img { height: 160px; }
+}
+
+@media (max-width: 480px) {
+    .gallery-header h1 { font-size: 22px; }
+    .gallery-header p { font-size: 14px; }
+    .filter-btn { padding: 6px 12px; font-size: 12px; margin: 0 5px 5px 0; }
+    .gallery-item img { height: 140px; }
+    .gallery-grid { gap: 15px; }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

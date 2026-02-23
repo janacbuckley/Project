@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/photogallery.css">
+
+
+
+   <title>Bright Boost Media</title>
+
+   </head>
+  <body>
+    <!-- HEADER -->
+ <div class="header">
+ <div class="logo-text">
+        <img src="../img/logo1.JPG" alt="logo">
+         <h1> Bright Boost Media</h1>
+      </div>
+</div>     
+
+<hr>
+<nav>
+<div class="topnav" id="myTopnav">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleServices(event)">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="enterprise-solutions.html">Enterprise Growth Solutions</a>
+      <a href="emerging-solutions.html">Emerging Business Solutions</a>
+      <a href="packages.html">Packages & Pricing</a>
+    </div>
+  </div>
+ <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+   <a href="news.html">News</a>
+    <a href="blog.html">Blog</a>
+     <a href="photogallery.html" class="active">Photo Gallery</a>
+      <a href="review.html">Reviews</a>
+    
+<!-- Hamburger -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    </div>
+</nav>
+
+
+<section class="photo-gallery">
+  <div class="gallery-header">
+    <h1>Our Digital Marketing Gallery</h1>
+    <p>Explore our Work, Trends and Creative Ideas in Digital Marketing.</p>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="gallery-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="social">Social Media</button>
+    <button class="filter-btn" data-category="branding">Branding</button>
+    <button class="filter-btn" data-category="seo">SEO</button>
+    <button class="filter-btn" data-category="campaign">Campaigns</button>
+    <button class="filter-btn" data-category="creative">Creative</button>
+  </div>
+
+  <div class="gallery-grid">
+    <!-- Social Media -->
+    <div class="gallery-item" data-category="social">
+      <img src="../img/instagram.WEBP" alt="Instagram">
+      <div class="overlay"><p>Social Media Post</p></div>
+    </div>
+    <div class="gallery-item" data-category="social">
+      <img src="../img/facebook.png" alt="Facebook Ad">
+      <div class="overlay"><p>Facebook Ad Design</p></div>
+    </div>
+    <div class="gallery-item" data-category="social">
+      <img src="../img/linkedin.jpeg" alt="LinkedIn Campaign">
+      <div class="overlay"><p>LinkedIn Campaign</p></div>
+    </div>
+
+    <!-- Branding -->
+    <div class="gallery-item" data-category="branding">
+      <img src="../img/logodesign.jpeg" alt="Logo Design">
+      <div class="overlay"><p>Logo & Branding</p></div>
+    </div>
+    <div class="gallery-item" data-category="branding">
+      <img src="../img/palette.jpeg" alt="Color Palette">
+      <div class="overlay"><p>Color Palette</p></div>
+    </div>
+    <div class="gallery-item" data-category="branding">
+      <img src="../img/moodboard.jpeg" alt="Moodboard">
+      <div class="overlay"><p>Brand Moodboard</p></div>
+    </div>
+
+    <!-- SEO -->
+    <div class="gallery-item" data-category="seo">
+      <img src="../img/Analytics.jpeg" alt="Analytics Dashboard">
+      <div class="overlay"><p>SEO Analytics</p></div>
+    </div>
+    <div class="gallery-item" data-category="seo">
+      <img src="../img/keyword.jpeg" alt="Keyword Research">
+      <div class="overlay"><p>Keyword Research</p></div>
+    </div>
+    <div class="gallery-item" data-category="seo">
+      <img src="../img/websiteaudit.jpeg" alt="Website Audit">
+      <div class="overlay"><p>Website Audit</p></div>
+    </div>
+
+    <!-- Campaigns -->
+    <div class="gallery-item" data-category="campaign">
+      <img src="../img/email.jpeg" alt="Email Campaign">
+      <div class="overlay"><p>Email Campaign</p></div>
+    </div>
+    <div class="gallery-item" data-category="campaign">
+      <img src="../img/ad.jpeg" alt="Ad Banner">
+      <div class="overlay"><p>Ad Banner</p></div>
+    </div>
+    <div class="gallery-item" data-category="campaign">
+      <img src="../img/landing.png" alt="Landing Page">
+      <div class="overlay"><p>Landing Page Design</p></div>
+    </div>
+
+    <!-- Creative / Abstract -->
+    <div class="gallery-item" data-category="creative">
+      <img src="../img/abstract.jpeg" alt="Abstract Illustration">
+      <div class="overlay"><p>Creative Illustration</p></div>
+    </div>
+    <div class="gallery-item" data-category="creative">
+      <img src="../img/infographic.png" alt="Infographic">
+      <div class="overlay"><p>Infographic Design</p></div>
+    </div>
+    <div class="gallery-item" data-category="creative">
+      <img src="../img/digitalart.png" alt="Digital Art">
+      <div class="overlay"><p>Digital Art Concept</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="photogallery-footer">
+  <p>&copy; 2026 Bright Boost Media. All Rights Reserved.</p>
+  <p> Devolped by: Jana-Charisse Buckley</p>
+</footer>
+
+ <script src="../script/script1.js" defer></script>
+
+</body>
+</html>
